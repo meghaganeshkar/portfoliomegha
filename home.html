@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f5f7;
+    color: #111;
+    display: flex;
+}
+
+/* ========== Floating Sidebar ========== */
+.sidebar {
+    width: 230px;
+    height: 90vh;
+    margin: 25px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    padding: 30px 25px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 25px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    padding: 12px 15px;
+    margin: 12px 0;
+    font-size: 17px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.menu li:hover,
+.menu li.active {
+    background: #111;
+    color: #fff;
+    transform: translateX(6px);
+}
+
+/* ========== Content ========== */
+.content {
+    flex: 1;
+    padding: 50px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #007aff;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+.hire-btn {
+    padding: 12px 25px;
+    background: #007aff;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hire-btn:hover {
+    background: #005ecb;
+}
+
+.hero-img {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Section Headings */
+.section {
+    margin-bottom: 70px;
+}
+
+.heading {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text {
+    max-width: 600px;
+    color: #444;
+}
+
+/* Skills */
+.skills-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.skill-box {
+    flex: 1;
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.skill-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating Sidebar -->
+    <aside class="sidebar">
+        <h2 class="logo">Megha</h2>
+        <ul class="menu">
+            <li class="active">🏠 Home</li>
+            <li>👩‍💻 About</li>
+            <li>💼 Portfolio</li>
+            <li>🧠 Skills</li>
+            <li>📞 Contact</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <section class="hero">
+            <div>
+                <h1>Hello, I'm <span>Megha Magdum</span></h1>
+                <p class="subtitle">Frontend Developer • UI Designer • Problem Solver</p>
+                <button class="hire-btn">Hire Me</button>
+            </div>
+
+            <img src="https://i.ibb.co/9wvLxYB/profile.jpg" class="hero-img">
+        </section>
+
+        <section class="section">
+            <h2 class="heading">About Me</h2>
+            <p class="text">
+                I’m a passionate developer creating clean, modern and beautiful web experiences.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="heading">Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Backend</h3>
+                    <p>Node, Express, MongoDB</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
